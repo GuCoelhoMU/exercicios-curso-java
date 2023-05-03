@@ -25,7 +25,5 @@ public class Exercicio {
 		}
 		System.out.println("Sexo Masculino: " + grupoM);
 		System.out.println("Sexo Feminino:" + grupoF);
-
 	}
-
 }
