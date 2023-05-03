@@ -1,0 +1,31 @@
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class Exercicio {
+
+	public static void main(String[] args) {
+		Set<String> grupoM = new HashSet<>();
+		Set<String> grupoF = new HashSet<>();
+		for (int i = 0; i <= 5; i++) {
+			Scanner tc = new Scanner(System.in);
+			System.out.println("Digite seu sexo(Feminino ou Masculino): ");
+			String sexo = tc.nextLine();
+			System.out.println("Digite seu nome: ");
+			String nome = tc.nextLine();
+
+			switch (sexo) {
+			case "Masculino":
+				grupoM.add(nome);
+				break;
+			case "Feminino":
+				grupoF.add(nome);
+				break;
+			}
+		}
+		System.out.println("Sexo Masculino: " + grupoM);
+		System.out.println("Sexo Feminino:" + grupoF);
+
+	}
+
+}
