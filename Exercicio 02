@@ -1,0 +1,27 @@
+package exercicios;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
+
+public class Exe01 {
+
+	public static void main(String[] args) {
+		Scanner tc = new Scanner(System.in);
+		
+		System.out.println("Digite os nomes separados por vírgula: ");
+		String nome = tc.nextLine();
+		String[] nomes = nome.split(",");
+		
+		
+		List<String> lista = new ArrayList<>();
+		for(String n : nomes) {
+			lista.add(n);
+		}
+		Collections.sort(lista);
+		System.out.println(lista);
+		
+	}
+
+}
